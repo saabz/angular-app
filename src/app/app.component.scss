@@ -1,0 +1,28 @@
+@import "styles.scss";
+
+.app-container {
+    width: 100%;    
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100px;
+    background-color: $primary-bg-color;
+    box-sizing: border-box;
+    padding: 1px 20px 1px 20px ;
+    top: 0;
+    position: sticky;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: $primary-bg-color;
+    color: $primary-text-color;
+}
