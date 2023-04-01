@@ -1,1 +1,13 @@
-h1 { color: white;}
+.header-container {
+  display: flex;
+  align-items: center;
+  .logo-container {
+    width: 400px;
+    h1 {
+      color: white;
+    }
+  }
+  .nav-container {
+    text-align: end;
+  }
+}

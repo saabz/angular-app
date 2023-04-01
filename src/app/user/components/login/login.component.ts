@@ -13,4 +13,9 @@ export class LoginComponent {
   });
 
   constructor() {}
+
+  public handleButtonClick(event: any): void {
+    // TODO: handle form submission here
+    console.log('Button Click event recevied in parent');
+  }
 }

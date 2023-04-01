@@ -1,2 +1,20 @@
-<shared-text-input [control]="formGroup.controls.userName" label="Username" inputId="username"></shared-text-input>
-<shared-text-input [control]="formGroup.controls.password" label="Password" inputId="password"></shared-text-input>
+<div class="login-container">
+  <h4>Login Form</h4>
+  <form action="">
+    <shared-text-input
+      [textInputControl]="formGroup.controls.userName"
+      textInputLabel="Username"
+      textInputId="username"
+    ></shared-text-input>
+    <shared-password-input
+      [passwordInputControl]="formGroup.controls.password"
+      passwordInputLabel="Password"
+      passwordInputId="password"
+    ></shared-password-input>
+    <div class="spacer">&nbsp;</div>
+    <shared-button
+      buttonLabel="Submit"
+      (onButtonClick)="handleButtonClick($event)"
+    ></shared-button>
+  </form>
+</div>

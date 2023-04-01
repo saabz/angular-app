@@ -1,4 +1,21 @@
-<div class="shared-text-input">
-    <label [for]="inputId">{{label}}</label>
-    <input type="text"  [id]="inputId" [formControl]="control">
+<div class="text-input-wrapper">
+  <div>
+    <label [for]="textInputId">{{ textInputLabel }}</label>
+  </div>
+  <div>
+    <input type="text" [id]="textInputId" [formControl]="textInputControl" />
+  </div>
+  <ng-container
+    *ngIf="
+      textInputControl.invalid &&
+      (textInputControl.touched || textInputControl.dirty)
+    "
+  >
+    <div
+      class="text-input-error"
+      *ngFor="let err of textInputControl.errors | keyvalue"
+    >
+      {{ errorMessages[err.key] }}
+    </div>
+  </ng-container>
 </div>

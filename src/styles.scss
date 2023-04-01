@@ -1,9 +1,18 @@
-body{
-    padding: 0;
-    margin: 0;
-}
+// Global variables
 
 // Colors
-
 $primary-bg-color: grey;
+$secondary-bg-color: white;
+$orange-bg-color: rgb(238, 64, 11);
 $primary-text-color: white;
+$secondary-text-color: black;
+
+// Fonts
+
+// Global styles
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+}

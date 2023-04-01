@@ -1,0 +1,18 @@
+@import "styles.scss";
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 5px;
+
+  button {
+    all: unset;
+    min-width: 50px;
+    padding: 3px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid $orange-bg-color;
+    border-radius: 5px;
+    color: $primary-text-color;
+    background-color: $orange-bg-color;
+  }
+}

@@ -7,9 +7,14 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./text-input.component.scss'],
 })
 export class TextInputComponent {
-  @Input() inputId = '';
-  @Input() control = new FormControl();
-  @Input() label = '';
+  @Input() textInputId = '';
+  @Input() textInputControl = new FormControl();
+  @Input() textInputLabel = '';
+
+  errorMessages: Record<string, string> = {
+    required: 'This field cannot be blank',
+    email: 'This email is invalid',
+  };
 
   constructor() {}
 }
