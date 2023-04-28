@@ -1,0 +1,30 @@
+@import "styles.scss";
+
+.post {
+  border: 1px solid $primary-bg-color;
+  border-radius: 10px;
+  color: $secondary-text-color;
+  margin: 5px;
+  padding: 5px 10px;
+  //   white-space: nowrap;
+  //   overflow: hidden;
+  //   text-overflow: ellipsis;
+
+  h3 {
+    margin: 2px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .content {
+    p {
+      color: $primary-bg-color;
+    }
+    //    p {
+    //      white-space: nowrap;
+    //      overflow: hidden;
+    //      text-overflow: ellipsis;
+    //    }
+  }
+}
